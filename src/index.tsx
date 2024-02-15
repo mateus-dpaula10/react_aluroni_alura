@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import 'normalize.css'
+import ReactDOM from 'react-dom/client';
+import 'normalize.css';
 import './index.css';
-import Cardapio from './pages/Cardapio';
+import Router from './routes';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Cardapio />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Router />
+  </React.StrictMode>
 );
